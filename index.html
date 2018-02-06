@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+
+	<title>Videos</title>
+
+	<meta name="author" content="Jessica Ochs">
+	<meta name="description" content="New experience of watching videos!">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="js/script.js"></script>
+	<!--
+		<link media="only screen and (max-width: 480px)" href="css/style.css" type= "text/css">
+		<link rel="stylesheet" href="css/style.css" title="main-template">
+	-->
+</head>
+
+<body>
+	<!-- As a heading -->
+	<nav class="navbar navbar-dark bg-dark">
+		<span class="navbar-brand mb-0 h1">New experience of watching videos!</span>
+	</nav>
+	
+
+	<div class="container-fluid content">
+			<!-- Debug Ausgaben
+			<p id="x_acc">No accelerometer found.</p>
+			<p id="x_average"></p>
+			<p id="z_acc"></p>
+
+			<br /> -->
+			
+			<div class="jumbotron" id="no_acc">Sorry, your device doesn't have an accelerometer, that is needed for the application to work. Still have fun watching the video!</div>
+
+			<video id="video" height="auto" width="100%" controls autoplay>
+				<source id="mp4video" src="videos/Coastline.mp4" type="video/mp4">
+					I'm Sorry, your browser doesn't support HTML5 Videos with MP4.
+				</video>
+			
+
+				<div class="card">
+					<div class="card-body">
+						<span id="video_stat_icon" style="font-size:30px"></span>
+						<span id="video_stat_text" style="font-size:22px"></span>
+						<span style="padding-left:2em; font-size:22px" id="video_time"> </span>						
+					</div>
+				</div>
+						
+			</div>
+
+
+			<footer style="font-size:18px" class="container-fluid">
+				Author: Jessica Ochs
+			</footer>
+		
+
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+		</body>
+
+		</html>
